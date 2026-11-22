@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+
+}
+
+#login {
+    background-color: rgb(62, 213, 233);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.username-section, .password-section {
+    text-align: center;
+}
+
+#submit-button {
+    display: block;
+    margin: 20px auto;
+
+}
+
+#wrong-username, #wrong-password {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form name="login" id="login" action="login.php" method="post">
+        <div class="username-section">
+            <p id="wrong-username">wrong username</p>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="enter username"
+            name="username"
+            required
+          />
+        </div>
+
+        <div class="password-section">
+          <p id="wrong-password">wrong password</p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="enter password"
+            name="password"
+            required
+          />
+        </div>
+
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+
+      <button id="test-button">Test</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
