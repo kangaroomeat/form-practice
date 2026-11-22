@@ -7,6 +7,7 @@ const wrongUsername = document.getElementById("wrong-username");
 const wrongPassword = document.getElementById("wrong-password");
 const password = "bingobong";
 const username = "admin";
+const showPasswordBox = document.getElementById("show-password");
 
 function dontSubmit() {
   loginForm.addEventListener('submit', function(e) {
@@ -57,6 +58,15 @@ function login() {
     }
 }
 
-function showPassword() {
-    
+
+showPasswordBox.addEventListener("click", togglePassword);
+
+function togglePassword() {
+    if(showPasswordBox.checked) {
+        //console.log("show password");
+        passwordInput.type = "text";
+    } else if (!showPasswordBox.checked) {
+       //console.log("hide password");
+        passwordInput.type = "password";
+    }
 }
